@@ -24,7 +24,10 @@ void setup() {
   Pines();
  Serial.begin(115200);
  WIFI();
-  
+
+  Serial.println("");
+  Serial.print("Id= ");
+  Serial.println(ESP.getChipId());
 }
 
 
